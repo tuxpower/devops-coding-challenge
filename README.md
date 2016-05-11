@@ -10,11 +10,13 @@ L’outil doit se présenter sous forme d’une commande shell (Windows, Mac ou 
 - Nombre de fichiers
 - Taille totale des fichiers
 - Dernière date de mise-à-jour
+
 ##### Les options suivantes doivent être supportées:
 - Possibilité de sortir les résultats en octets, Kilooctets, Megaoctets, … ;
 - Pouvoir sortir les informations par [type de stockage](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) (Standard, IA, RR) ;
 - Pouvoir spécifier une liste de buckets (bonus si support des expressions régulières) ;
 - Pouvoir regrouper les informations par [régions](http://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
+
 ##### Idées de fonctionnalités supplémentaires
 Il serait bien de pouvoir filtrer les fichiers considérés dans le calcul à l’aide d’un préfixe (ex: s3://mybucket/Folder/SubFolder/log*). Il est également utile de pouvoir filtrer ou organiser les résultats selon le [type d'encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html), d’obtenir des informations supplémentaires sur les buckets (Life cycle, cross-region replication, etc.) ou de tenir compte des [versions précédentes](https://docs.aws.amazon.com/AmazonS3/latest/UG/enable-bucket-versioning.html) des fichiers (nombre + taille).
 
