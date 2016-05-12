@@ -1,26 +1,26 @@
 # Coveo DevOps Challenge
-### Le défi
-Ton défi, si tu l’acceptes, est de développer un outil permettant d’analyser la taille des ressources de stockage S3 d’un compte Amazon Web Services (AWS).
-Afin de tester ton outil, tu peux te créer un compte gratuit sur [Amazon](http://aws.amazon.com/fr/free/) (si tu n’en as pas déjà un).
-### Spécifications
-L’outil doit se présenter sous forme d’une commande shell (Windows, Mac ou Linux) qui permet d’obtenir des informations sur l’ensemble des ressources [S3](https://aws.amazon.com/documentation/s3/) d’un compte Amazon.
-##### L’outil doit permettre d’obtenir les informations suivantes:
-- Nom du bucket
-- Date de création
-- Nombre de fichiers
-- Taille totale des fichiers
-- Dernière date de mise-à-jour
+### The Challenge
+Your challenge, should you choose to accept it, is to develop an AWS S3 storage analysis tool. To test your tool, you will have to create a free [Amazon](http://aws.amazon.com/en/free/) account (if you don't already have one).
+### Specifications
+The tool is a shell command (could be either Windows, Mac or Linux) that returns informations over all [S3](https://aws.amazon.com/documentation/s3/) buckets in an Amazon account.
+##### The tool should return the following informations:
+- Bucket name
+- Creation date (of the bucket)
+- Number of files
+- Total size of files
+- Last modified date (most recent file of a bucket)
 
-##### Les options suivantes doivent être supportées:
-- Possibilité de sortir les résultats en octets, Kilooctets, Megaoctets, … ;
-- Pouvoir sortir les informations par [type de stockage](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) (Standard, IA, RR) ;
-- Pouvoir spécifier une liste de buckets (bonus si support des expressions régulières) ;
-- Pouvoir regrouper les informations par [régions](http://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
+##### The following options shall be supported:
+- Ability to get the size results in bytes, KB, MB, ...
+- Organize the information by [storage type](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) (Standard, IA, RR)
+- Filter the results to a list of buckets (bonus point for regex support)
+- Ability to group information by [regions](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 
-##### Idées de fonctionnalités supplémentaires
-Il serait bien de pouvoir filtrer les fichiers considérés dans le calcul à l’aide d’un préfixe (ex: s3://mybucket/Folder/SubFolder/log*). Il est également utile de pouvoir filtrer ou organiser les résultats selon le [type d'encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html), d’obtenir des informations supplémentaires sur les buckets (Life cycle, cross-region replication, etc.) ou de tenir compte des [versions précédentes](https://docs.aws.amazon.com/AmazonS3/latest/UG/enable-bucket-versioning.html) des fichiers (nombre + taille).
+##### Some additional features that could be useful (optional)
+It would be nice to support prefix in the bucket filter (e.g.: s3://mybucket/Folder/SubFolder/log*). It may also be useful to organize the results according to the [encryption type](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html), get additional buckets informations (life cycle, cross-region replication, etc.) or take account of the [previous file versions](https://docs.aws.amazon.com/AmazonS3/latest/UG/enable-bucket-versioning.html) in the count + size calculation.
 
-Des statistiques pour afficher le pourcentage de l’espace total occupé par un bucket ou toute autre bonne idée que tu pourrais avoir sont également les bienvenues.
-### Plus d'informations
-- Tu es libre d’utiliser le langage et le [SDK](https://aws.amazon.com/tools/) de ton choix ;
-- Nous allons tester le fruit de ton travail sur notre environnement qui, soit dit en passant, contient des millions de fichiers. La performance globale de la solution proposée est donc à considérer.
+Some statistics to check the percentage of space occupied by a bucket or any other good ideas you could have are more than welcomes.
+### Rules
+- Your are free to use the programming language and the [SDK](https://aws.amazon.com/tools/) of your choice.
+- We will test your work over our environment (which contains millions of files). The overall performance of your tool will be evaluated.
+- Your code must be made available as a git fork of our challenge or any other public version control software.  
