@@ -23,4 +23,5 @@ Il serait bien de pouvoir filtrer les fichiers considérés dans le calcul à l�
 Des statistiques pour afficher le pourcentage de l’espace total occupé par un bucket ou toute autre bonne idée que tu pourrais avoir sont également les bienvenues.
 ### Plus d'informations
 - Tu es libre d’utiliser le langage et le [SDK](https://aws.amazon.com/tools/) de ton choix ;
-- Nous allons tester le fruit de ton travail sur notre environnement qui, soit dit en passant, contient des millions de fichiers. La performance globale de la solution proposée est donc à considérer.
+- Nous allons tester le fruit de ton travail sur notre environnement qui, soit dit en passant, contient des millions de fichiers. La performance globale de la solution proposée est donc à considérer ;
+- Ton code doit être disponible à partir de n'importe quel gestionnaire de code source publique (tu peux faire un "fork" de notre challenge si tu veux).

@@ -3,7 +3,7 @@
 Your challenge, should you choose to accept it, is to develop an AWS S3 storage analysis tool. To test your tool, you will have to create a free [Amazon](http://aws.amazon.com/en/free/) account (if you don't already have one).
 ### Specifications
 The tool is a shell command (could be either Windows, Mac or Linux) that returns informations over all [S3](https://aws.amazon.com/documentation/s3/) buckets in an Amazon account.
-##### The tool should return the following informations:
+##### The tool must returns the following informations:
 - Bucket name
 - Creation date (of the bucket)
 - Number of files
