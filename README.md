@@ -24,3 +24,10 @@ Some statistics to check the percentage of space used by a bucket, or any other 
 - Your are free to use the programming language and the [SDK](https://aws.amazon.com/tools/) of your choice.
 - We will test your work over our environment (which contains millions of files). The overall performance of your tool will be evaluated.
 - Your code must be made available as a git fork of our challenge or any other public version control software.  
+
+Advices
+
+Try to design and implement your solution as you would do for real production code. Show us how you create clean, maintainable code that does awesome stuff. Build something that we'd be happy to contribute to. This is not a programming contest where dirty hacks win the game.
+Feel free to add more features! Really, we're curious about what you can think of. We'd expect the same if you worked with us.
+Documentation and maintainability is a plus.
+Don't you forget those unit tests.
