@@ -25,3 +25,10 @@ Des statistiques pour afficher le pourcentage de l’espace total occupé par un
 - Tu es libre d’utiliser le langage et le [SDK](https://aws.amazon.com/tools/) de ton choix ;
 - Nous allons tester le fruit de ton travail sur notre environnement qui, soit dit en passant, contient des millions de fichiers. La performance globale de la solution proposée est donc à considérer ;
 - Ton code doit être disponible à partir de n'importe quel gestionnaire de code source publique (tu peux faire un "fork" de notre challenge si tu veux).
+
+## Conseils
+
+- **Tente de créer ta solution comme si c'était du vrai code de production**. Montre nous comment tu crées du code propre et maintenable qui fait des choses incroyables. Construit quelque chose à laquelle nous serions heureux de contribuer. Ceci n'est pas un concours de programmation où les "hack" malpropres remportent la victoire.
+- N'hésite pas à ajouter des fonctionnalités! Nous sommes curieux de voir ce à quoi tu peux penser. Nous nous attendrons à la même chose si tu travailles avec nous.
+- La documentation et la maintenabilité est un plus.
+- N'oublie pas les tests unitaires.
