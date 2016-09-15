@@ -1,4 +1,4 @@
-# Coveo DevOps Challenge
+# DevOps Challenge
 ### The Challenge
 Your challenge, should you choose to accept it, is to develop an AWS S3 storage analysis tool. To test your tool, you will have to create a free [Amazon](http://aws.amazon.com/en/free/) account (if you don't already have one).
 ### Specifications
@@ -26,7 +26,6 @@ Some statistics to check the percentage of space used by a bucket, or any other 
 - Your code must be made available as a git fork of our challenge or any other public version control software.  
 
 ## Advices
-
 - **Try to design and implement your solution as you would do for real production code**. Show us how you create clean, maintainable code that does awesome stuff. Build something that we'd be happy to contribute to. This is not a programming contest where dirty hacks win the game.
 - Feel free to add more features! Really, we're curious about what you can think of. We'd expect the same if you worked with us.
 - Documentation and maintainability is a plus.
