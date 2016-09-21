@@ -14,7 +14,6 @@
  */
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -124,7 +123,7 @@ public class AwsConsoleApp {
             int  totalItems = 0;
             
         	System.out.println("Here's a detailed list of your buckets:");
-        	System.out.println("Name: \t Creation date: \t #Items: \t Size: \t Last Modified:");
+        	System.out.println("Name: \t Region: \t Creation date: \t #Items: \t Size: \t Last Modified: \t Policy:");
         	
             for (Bucket bucket : buckets) {
                 /*
@@ -156,9 +155,9 @@ public class AwsConsoleApp {
                 } while (objects.isTruncated());
                 
                 if (bucketItems > 0) {
-                	System.out.println(bucket.getName() + "\t" + bucket.getCreationDate() + "\t" + bucketItems + "\t" + bucketSize + "\t" + lastModified);
+                	System.out.println(bucket.getName() + "\t" + s3.getBucketLocation(bucket.getName()) + "\t" + bucket.getCreationDate() + "\t" + bucketItems + "\t" + bucketSize + "\t" + lastModified + "\n" + s3.getBucketPolicy(bucket.getName()).getPolicyText());
                 } else {
-                	System.out.println(bucket.getName() + "\t" + bucket.getCreationDate() + "\t" + bucketItems + "\t" + bucketSize + "\t" + " - -");
+                	System.out.println(bucket.getName() + "\t" + s3.getBucketLocation(bucket.getName()) + "\t" + bucket.getCreationDate() + "\t" + bucketItems + "\t" + bucketSize + "\t" + " - -" + "\n" + s3.getBucketPolicy(bucket.getName()).getPolicyText());
                 }
             }
 
